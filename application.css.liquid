@@ -1,6 +1,113 @@
-// Put your styles in this file.
-// Note: "@import" rules aren’t supported.
+/* // Put your styles in this file.
+// Note: "@import" rules aren’t supported. */
+@font-face {
+    font-family: "PPAgrandir-GrandHeavy";
+    src: url('{{"PPAgrandir-GrandHeavy.otf" | asset_url}}');
+    src: url('{{"PPAgrandir-GrandHeavy.woff" | asset_url }}') format("woff"),
+    url('{{"PPAgrandir-GrandHeavy.otf" | asset_url }}') format("opentype"),
+    url('{{"PPAgrandir-GrandHeavy.svg#filename" | asset_url }}') format("svg");
+    }
 
-body{
-    background-color:#000;
+    @font-face {
+        font-family: "PPAgrandir-Regular";
+        src: url('{{"PPAgrandir-Regular.otf" | asset_url}}');
+        src: url('{{"PPAgrandir-Regular.woff" | asset_url }}') format("woff"),
+        url('{{"PPAgrandir-Regular.otf" | asset_url }}') format("opentype"),
+        url('{{"PPAgrandir-Regular.svg#filename" | asset_url }}') format("svg");
+        }
+
+
+
+.logo img{
+    width: 200px;
+    height: 200px;
+}
+
+nav img{
+width: 20px;
+}
+
+.main a,
+.main-menu a,
+.footer-menu a{
+    text-decoration: none;
+    color:black;
+    font-family: 'PPAgrandir-GrandHeavy';
+    
+}
+
+.main a{
+    margin-right: 8px;
+}
+
+.main-menu li,
+.footer-menu li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+
+
+header,
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+.hero{
+    display: flex;
+ 
+}
+
+.hero img{
+    width: 100%;
+}
+
+h2{
+    font-family: 'PPAgrandir-GrandHeavy';
+    font-size: 40px;
+    padding-top: 107px;
+    padding-bottom: 107px;
+   overflow: hidden;
+   transform: translateX(-70px);
+   display: block;
+   animation: moveLeft 200s infinite;
+}
+
+
+
+.B{
+    color: #FF66A7;
+}
+
+.L{
+    color: #FF9951;
+}
+
+.O1{
+    color: #E3A2EE;
+}
+
+.O2{
+    color: #B4D0FB;
+}
+
+.M{
+    color: #96F650;
+}
+
+@keyframes moveLeft{
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-3000vw);
+    }
+}
+
+
+footer{
+    background-color:#B4D0FB;
 }
